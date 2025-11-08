@@ -3,136 +3,136 @@
         <html lang="id">
         <head>
           <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Preview Tutorial</title>
-  <style>
-    body {
-      font-family: "Inter", "Segoe UI", sans-serif;
-      background: #0d0d13;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 40px 20px;
-    }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Preview Tutorial</title>
+        <style>
+          body {
+            font-family: "Inter", "Segoe UI", sans-serif;
+            background: #0d0d13;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 40px 20px;
+          }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      background: #1a1a24;
-      padding: 40px 50px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      animation: fadeIn 0.5s ease-in-out;
-    }
+          .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #1a1a24;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.5s ease-in-out;
+          }
 
-    h1 {
-      color: #a882ff;
-      font-size: 2rem;
-      margin-bottom: 8px;
-      text-transform: capitalize;
-    }
+          h1 {
+            color: #a882ff;
+            font-size: 2rem;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+          }
 
-    .date {
-      color: #aaa;
-      font-size: 14px;
-      margin-bottom: 35px;
-      border-bottom: 1px solid #2e2e3e;
-      padding-bottom: 10px;
-    }
+          .date {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #2e2e3e;
+            padding-bottom: 10px;
+          }
 
-    .step-card {
-      background: #222233;
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 35px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
-    }
+          .step-card {
+            background: #222233;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+          }
 
-    .step-card:hover {
-      background: #2b2b3d;
-      transform: translateY(-3px);
-    }
+          .step-card:hover {
+            background: #2b2b3d;
+            transform: translateY(-3px);
+          }
 
-    .step-number {
-      color: #9b7bff;
-      font-weight: 600;
-      font-size: 18px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
+          .step-number {
+            color: #9b7bff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+          }
 
-    .step-body {
-      display: flex;
-      align-items: flex-start;
-      gap: 25px;
-    }
+          .step-body {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+          }
 
-    .image-wrap {
-      flex: 0 0 40%;
-    }
+          .image-wrap {
+            flex: 0 0 40%;
+          }
 
-    .image-wrap img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-      display: block;
-    }
+          .image-wrap img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: block;
+          }
 
-    .no-image {
-      background: #333344;
-      color: #bbb;
-      text-align: center;
-      border-radius: 10px;
-      padding: 30px;
-    }
+          .no-image {
+            background: #333344;
+            color: #bbb;
+            text-align: center;
+            border-radius: 10px;
+            padding: 30px;
+          }
 
-    .step-text {
-      flex: 1;
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: #e0e0e0;
-      white-space: pre-line;
-      background: rgba(255, 255, 255, 0.03);
-      border-left: 4px solid #6b4cff;
-      padding: 20px 25px;
-      border-radius: 10px;
-      min-height: 100%;
-    }
+          .step-text {
+            flex: 1;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            white-space: pre-line;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #6b4cff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            min-height: 100%;
+          }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(10px);
+            }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
 
-    @media (max-width: 768px) {
-      .step-body {
-        flex-direction: column;
-      }
+          @media (max-width: 768px) {
+            .step-body {
+              flex-direction: column;
+            }
 
-      .image-wrap {
-        flex: 1 1 100%;
-      }
+            .image-wrap {
+              flex: 1 1 100%;
+            }
 
-      .step-text {
-        margin-top: 15px;
-      }
+            .step-text {
+              margin-top: 15px;
+            }
 
-      .container {
-        padding: 25px 20px;
-      }
+            .container {
+              padding: 25px 20px;
+            }
 
-      h1 {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
+            h1 {
+              font-size: 1.6rem;
+            }
+          }
+        </style>
         </head>
         <body>
           <div class="container">
